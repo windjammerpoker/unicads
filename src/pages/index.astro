@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+const today = new Date();
 ---
 
 <!doctype html>
@@ -26,7 +27,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         			<a href="https://bitcointalk.org/index.php?topic=3015740" target="_blank" rel="nofollow"><i class="fa fa-btc fa-2x" aria-hidden="true"></i></a>
         			<a href="https://github.com/unicads/smart-contract-structure" target="_blank" rel="nofollow"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
                 </div>
-				<p><i class="fa fa-copyright" aria-hidden="true"></i> 2026 UNIC Advertising Network</p>
+				<p><i class="fa fa-copyright" aria-hidden="true"></i> {today.getFullYear()}  UNIC Advertising Network</p>
 			</div>
 		</div>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
