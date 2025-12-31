@@ -7,7 +7,7 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://uncads.net",
+	site: "https://unicads.net",
 	integrations: [mdx(), sitemap()],
 	adapter: cloudflare({
 		platformProxy: {
