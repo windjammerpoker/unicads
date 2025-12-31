@@ -47,45 +47,4 @@ const { title, description, image = '/how_it_works.jpg' } = Astro.props;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@font-face {
-    font-family: 'cubicregular';
-    src: url('../fonts/cubic-webfont.eot');
-    src: url('../fonts/cubic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/cubic-webfont.woff') format('woff'),
-         url('../fonts/cubic-webfont.ttf') format('truetype'),
-         url('../fonts/cubic-webfont.svg#cubicregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-*{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;line-height:18px;font-family:'Roboto', sans-serif}
-body{background-color:#fff}
-body,html{height:100%}
-button,input,select,textarea{outline:0}
-img{border:none}
-.container{position:relative;display:block;height:100%;width: 100%; background-image:url(/soon.jpg);background-position:top center;background-repeat:no-repeat;background-size: 70%;}
-.header{position:fixed;top:0;left:0;width:100%;background-color:#fff;z-index:30;border-bottom: #ececec 1px solid;}
-.header_container{min-height:102px}
-.socials{margin:0; padding-top: 10px;width: 380px;}
-.socials i{color: #cfdcd4; font-size: 26px; padding-right: 11px;}
-.contacts{color: #cfdcd4;
-    margin: 0 auto;
-    width: 23%;
-    bottom: 20px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);}
-.contacts a{color: #cfdcd4;}
-.contacts p{padding-top: 10px; padding-bottom: 10px;}
 
-@media screen and (max-width:350px){
-	.container{background-size: 200%;}
-}
-
-@media screen and (max-width:800px){
-	.container{background-size: 100%;}
-	.contacts{width:80%;}
-	.socials i{padding-right: 5px;}
-}
-</style>
