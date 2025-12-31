@@ -14,7 +14,7 @@ body{background-color:#fff}
 body,html{height:100%}
 button,input,select,textarea{outline:0}
 img{border:none}
-.container{position:relative;display:block;height:100%;width: 100%; background-image:url(/soon.jpg);background-position:top center;background-repeat:no-repeat;background-size: 70%;}
+.container{position:relative;display:block;height:100%;width: 100%; background-image:url(../soon.jpg);background-position:top center;background-repeat:no-repeat;background-size: 70%;}
 .header{position:fixed;top:0;left:0;width:100%;background-color:#fff;z-index:30;border-bottom: #ececec 1px solid;}
 .header_container{min-height:102px}
 .socials{margin:0; padding-top: 10px;width: 380px;}
